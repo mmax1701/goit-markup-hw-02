@@ -1,7 +1,9 @@
-/* :root {
---text-main
---background
-} */
+:root {
+  --main-color-text: #2e2f42;
+  --second-color-text: #434455;
+  --brand-color: #4d5ae5;
+  --pressed-color: #404bbf;
+}
 
 .hidden {
   position: absolute;
@@ -25,7 +27,7 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  color: #434455;
+  color: var(--second-color-text);
 }
 
 /* ============HEADER============ */
@@ -38,7 +40,7 @@ body {
   align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #2e2f42;
+  color: var(--main-color-text);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   flex: none;
   order: 1;
@@ -53,7 +55,7 @@ body {
   align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #4d5ae5;
+  color: var(--brand-color);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   flex: none;
   order: 0;
@@ -64,11 +66,11 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: var(--main-color-text);
 }
 .header-link:hover,
 .header-link:focus {
-  color: #404bbf;
+  color: var(--pressed-color);
 }
 
 .contacts-link {
@@ -76,17 +78,17 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
+  color: var(--second-color-text);
 }
 
 .contacts-link:hover,
 .contacts-link:focus {
-  color: #404bbf;
+  color: var(--pressed-color);
 }
 
 /* ============HERO============ */
 .hero {
-  background-color: #2e2f42;
+  background-color: var(--main-color-text);
 }
 .hero-title {
   font-size: 56px;
@@ -107,13 +109,13 @@ body {
   order: 0;
   flex-grow: 0;
   cursor: pointer;
-  background: #4d5ae5;
+  background: var(--brand-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
 .hero-btn:hover,
 .hero-btn:focus {
-  background: #404bbf;
+  background: var(--pressed-color);
 }
 
 /* ============BENEFITS============ */
@@ -122,13 +124,13 @@ body {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: var(--main-color-text);
 }
 .benefits-item-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
+  color: var(--second-color-text);
   flex: none;
   order: 1;
   flex-grow: 0;
@@ -140,7 +142,7 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  color: #2e2f42;
+  color: var(--main-color-text);
 }
 /* ============TEAM============ */
 .team {
@@ -160,7 +162,7 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  color: #2e2f42;
+  color: var(--main-color-text);
 }
 .team-item-title {
   font-weight: 500;
@@ -168,14 +170,14 @@ body {
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: var(--main-color-text);
 }
 .team-item-text {
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
   letter-spacing: 0.02em;
-  color: #434455;
+  color: var(--second-color-text);
   flex: none;
   order: 1;
   flex-grow: 0;
@@ -189,18 +191,19 @@ body {
   align-items: center;
   text-align: center;
   letter-spacing: 0.04em;
-  color: #4d5ae5;
+  color: var(--brand-color);
   background: #f4f4fd;
   border: 1px solid #e7e9fc;
   border-radius: 4px;
   flex: none;
   order: 2;
   flex-grow: 0;
+  cursor: pointer;
 }
 .filter-btn:hover,
 .filter-btn:focus {
   color: #ffffff;
-  background: #404bbf;
+  background: var(--pressed-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
@@ -217,20 +220,20 @@ body {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: var(--main-color-text);
 }
 .products-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
+  color: var(--second-color-text);
   flex: none;
   order: 1;
   flex-grow: 0;
 }
 /* ============FOOTER============ */
 .footer {
-  background-color: #2e2f42;
+  background-color: var(--main-color-text);
 }
 .footer-logo {
   font-family: 'Raleway';
@@ -255,7 +258,7 @@ body {
   align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #4d5ae5;
+  color: var(--brand-color);
   flex: none;
   order: 0;
   flex-grow: 0;
