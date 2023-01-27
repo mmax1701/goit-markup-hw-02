@@ -1,6 +1,20 @@
-/* font-family: 'Raleway', sans-serif;
- */
+/* :root {
+--text-main
+--background
+} */
 
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 .link {
   text-decoration: none;
 }
@@ -11,6 +25,7 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+  color: #434455;
 }
 
 /* ============HEADER============ */
@@ -51,6 +66,11 @@ body {
   letter-spacing: 0.02em;
   color: #2e2f42;
 }
+.header-link:hover,
+.header-link:focus {
+  color: #404bbf;
+}
+
 .contacts-link {
   font-style: normal;
   font-size: 16px;
@@ -59,18 +79,155 @@ body {
   color: #434455;
 }
 
+.contacts-link:hover,
+.contacts-link:focus {
+  color: #404bbf;
+}
+
 /* ============HERO============ */
+.hero {
+  background-color: #2e2f42;
+}
+.hero-title {
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+.hero-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  cursor: pointer;
+  background: #4d5ae5;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+.hero-btn:hover,
+.hero-btn:focus {
+  background: #404bbf;
+}
 
 /* ============BENEFITS============ */
-
-/* ============What are we doing============ */
-
+.benefits-item-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+.benefits-item-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+/* ============GALLERY============ */
+.gallery-title {
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #2e2f42;
+}
 /* ============TEAM============ */
-
+.team {
+  background: #f4f4fd;
+}
+.team-item {
+  width: 264px;
+  height: 380px;
+  background: #ffffff;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+}
+.team-title {
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #2e2f42;
+}
+.team-item-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+.team-item-text {
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #434455;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
 /* ============FILTER============ */
+.filter-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #4d5ae5;
+  background: #f4f4fd;
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+.filter-btn:hover,
+.filter-btn:focus {
+  color: #ffffff;
+  background: #404bbf;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
 
 /* ============PRODUCTS============ */
-
+.products-item {
+  width: 360px;
+  height: 420px;
+  background: #ffffff;
+  border: 1px solid #e7e9fc;
+}
+.products-item-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+.products-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
 /* ============FOOTER============ */
 .footer {
   background-color: #2e2f42;
