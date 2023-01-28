@@ -47,19 +47,7 @@ body {
   flex-grow: 0;
 }
 .span-logo {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.33;
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
   color: var(--brand-color);
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  flex: none;
-  order: 0;
-  flex-grow: 0;
 }
 .header-link {
   font-weight: 500;
@@ -98,6 +86,7 @@ body {
   color: #ffffff;
 }
 .hero-btn {
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -184,6 +173,7 @@ body {
 }
 /* ============FILTER============ */
 .filter-btn {
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -250,18 +240,7 @@ body {
   flex-grow: 0;
 }
 .footer-logo-span {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.17;
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
   color: var(--brand-color);
-  flex: none;
-  order: 0;
-  flex-grow: 0;
 }
 .footer-text {
   font-size: 16px;
